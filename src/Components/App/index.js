@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Intro from '../Intro';
-
+import Main from '../Main';
 import Series from '../../Container/Series'
 
 class App extends Component {
@@ -14,7 +14,8 @@ class App extends Component {
         </header>
         <Intro msg="Search your Favorite TV Shows " />
         
-        <Series  />
+        {/* <Series  /> */}
+        <Main />
       </div>
     );
   }

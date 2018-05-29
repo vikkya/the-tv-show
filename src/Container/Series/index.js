@@ -28,7 +28,7 @@ class Series extends Component{
                <p>Please Enter your favorite show name</p> }
                {!isFetching && series.length === 0 && seriesName.trim() !== '' &&
                <p>No Show is found</p> }
-               {isFetching && <p>Loading</p>}
+               {isFetching && <p>Loading...</p>}
                { !isFetching && 
                      <SeriesList list={this.state.series} />
                }
