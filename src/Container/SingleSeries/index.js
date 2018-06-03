@@ -15,7 +15,7 @@ class SingleSeries extends Component {
         console.log(show)
         return (
             <div>
-                {show === null && <p>Lading..</p>}
+                {show === null && <p>Loading...</p>}
                 {show !== null &&
                     <div className="media">
                         <div className="media-body">
