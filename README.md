@@ -9,3 +9,6 @@ The app allows you to search your favorite tv show know its ratings no. of episo
 1. Clone the project into your local directory. Goto the-tv-show directory
 2. Goto command line and write `npm install` or `yarn add`
 3. now run `npm run start`
+
+# demo
+[The TV Show](http://the-tv-show.surge.sh/)
