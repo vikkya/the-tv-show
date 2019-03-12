@@ -12,7 +12,9 @@ class SingleSeries extends Component {
     }
     render() {
         const { show } = this.state;
-        console.log(show)
+        function createMarkup(mark) {
+            return {__html: mark};
+        }
         return (
             <div>
                 {show === null && <p>Loading...</p>}
@@ -20,7 +22,7 @@ class SingleSeries extends Component {
                     <div className="media">
                         <div className="media-body">
                             <h5 className="mt-0 mb-1">{show.name}</h5>
-                            {show.summary}<br/>
+                            <p dangerouslySetInnerHTML={createMarkup(show.summary)}></p><br/>
                             <p>Rating: {show.rating.average}</p>
                             <a href={`https://imdb.com/title/${show.externals.imdb}`} target="blank" className="card-link">IMDB</a>
                             <a href={show.officialSite} target="blank" className="card-link">Official Site</a>
